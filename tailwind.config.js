@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         lazure: "#1611F5",
         darkBlue: "#080B2A",
+        'darkBlue-900': "#090A19",
         red: "#8B3232",
         "light-red": "#51111",
         pink: "#D628C4",
