@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Navbar({ isOpenModal, toggleModal }) {
   // Состояние для отслеживания, прокрутил ли пользователь страницу
@@ -22,9 +23,9 @@ function Navbar({ isOpenModal, toggleModal }) {
 
   return (
     <div
-      className={`w-full py-5 px-7 flex items-center justify-between  border-b-2 border-red md:h-auto h-16 top-0 left-0 ${
+      className={` w-full py-5 px-7 flex items-center justify-between  border-b-2 border-red md:h-auto h-16 top-0 left-0 ${
         scrolled
-          ? "md:bg-darkLight fixed"
+          ? "md:bg-darkLight bg-darkBlue fixed z-10"
           : "md:bg-transparent absolute md:border-none"
       }`}
     >
@@ -36,9 +37,11 @@ function Navbar({ isOpenModal, toggleModal }) {
             <li className="cursor-pointer hover:text-red transition whitespace-nowrap">
               О проекте
             </li>
-            <li className="cursor-pointer hover:text-red transition">
-              Аукцион
-            </li>
+            <Link to='/auction'>
+              <li className="cursor-pointer hover:text-red transition">
+                Аукцион
+              </li>
+            </Link>
             <li className="cursor-pointer hover:text-red transition">
               Избранное
             </li>
@@ -47,7 +50,7 @@ function Navbar({ isOpenModal, toggleModal }) {
       </div>
 
       {/* Burger menu */}
-      <div className="text-2xl md:hidden block z-20" onClick={toggleModal}>
+      <div className="text-2xl md:hidden block z-30" onClick={toggleModal}>
         {isOpenModal ? (
           <IoClose className="text-2xl transition" />
         ) : (
@@ -59,7 +62,7 @@ function Navbar({ isOpenModal, toggleModal }) {
       <div className="flex justify-center xl:gap-x-10 gap-x-4 items-center text-xl flex">
         <CiSearch className="xl:text-3xl text-xl cursor-pointer" />
         <a
-          href="#"
+          href="google.com"
           className="xl:p-3 p-2 text-red rounded-full border-2 border-solid border-red xl:text-xl text-sm hover:text-white hover:border-white transition"
         >
           Телеграмм
