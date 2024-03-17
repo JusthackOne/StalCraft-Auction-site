@@ -8,7 +8,7 @@ import itemPhoto from "./../assets/images/itemPhoto.png";
 function AuctionItem() {
   const [isLiked, setIsLiked] = useState(false);
   return (
-    <div className="sm:gap-10 gap-4 flex flex-col lg:w-1/5 md:w-1/4 w-full border-solid border-2 border-red rounded-xl p-5 bg-light relative">
+    <div className="sm:gap-10 gap-4 flex flex-col lg:w-1/5 md:w-1/4 w-full border-solid border-2 border-red rounded-xl p-5 bg-light">
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-1">
           <div className="flex gap-1">
