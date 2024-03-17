@@ -34,9 +34,9 @@ function Navbar({ isOpenModal, toggleModal }) {
         <img src={logo} alt="" className="w-fit h-auto" />
         <nav className="flex w-1/2">
           <ul className="flex w-full gap-x-10 text-md items-center justify-center">
-            <li className="cursor-pointer hover:text-red transition whitespace-nowrap">
+            <Link to='/' className="cursor-pointer hover:text-red transition whitespace-nowrap">
               О проекте
-            </li>
+            </Link>
             <Link to='/auction'>
               <li className="cursor-pointer hover:text-red transition">
                 Аукцион
