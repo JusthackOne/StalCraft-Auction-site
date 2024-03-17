@@ -13,7 +13,8 @@ module.exports = {
         'gray-300': "#636B6F",
         "red-20": "#8B3232",
         dark: "#090909",
-        'darkLight': 'rgb(13, 13, 13, 0.4)'
+        'darkLight': 'rgb(13, 13, 13, 0.4)',
+        'light': 'rgb(255, 255, 255, 0.05)'
       },
       fontFamily: {
         inter: ["inter", "sans-serif"], // Здесь 'sans-serif' - это fallback шрифт
