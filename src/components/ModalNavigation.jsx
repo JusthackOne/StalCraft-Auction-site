@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ModalNavigation({ isOpen }) {
   return (
@@ -9,10 +10,10 @@ function ModalNavigation({ isOpen }) {
     >
       <nav className="flex items-center justify-center w-full h-full">
         <ul className="flex flex-col gap-x-16 text-3xl justify-center w-full gap-y-10 text-md items-center justify-center">
-          <li className="cursor-pointer hover:text-red transition whitespace-nowrap">
+          <Link to='/' className="cursor-pointer hover:text-red transition whitespace-nowrap">
             О проекте
-          </li>
-          <li className="cursor-pointer hover:text-red transition">Аукцион</li>
+          </Link>
+          <Link to='/auction' className="cursor-pointer hover:text-red transition">Аукцион</Link>
           <li className="cursor-pointer hover:text-red transition">
             Избранное
           </li>
