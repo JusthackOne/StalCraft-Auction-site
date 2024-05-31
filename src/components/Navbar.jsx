@@ -5,6 +5,8 @@ import { CgProfile } from "react-icons/cg";
 import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import NavBarLinkItem from "./NavBarLinkItem";
+import { ACTIVE_NAVBAR_LINK, NAVBAR_LINK } from "../utils/constants";
 
 function Navbar({ isOpenModal, toggleModal }) {
   // Состояние для отслеживания, прокрутил ли пользователь страницу
@@ -34,17 +36,17 @@ function Navbar({ isOpenModal, toggleModal }) {
         <img src={logo} alt="" className="w-fit h-auto" />
         <nav className="flex w-1/2">
           <ul className="flex w-full gap-x-10 text-md items-center justify-center">
-            <Link to='/' className="cursor-pointer hover:text-red transition whitespace-nowrap">
-              О проекте
-            </Link>
-            <Link to='/auction'>
-              <li className="cursor-pointer hover:text-red transition">
-                Аукцион
-              </li>
-            </Link>
-            <li className="cursor-pointer hover:text-red transition">
-              Избранное
-            </li>
+            {/* {links.keys(({ to, active, title }) => (
+              <NavBarLinkItem to={to} active={active} title={title} />
+            ))} */}
+
+            {Object.keys(NAVBAR_LINK).map((linkId) => (
+              <NavBarLinkItem
+                key={linkId}
+                to={NAVBAR_LINK[linkId]["to"]}
+                title={NAVBAR_LINK[linkId]["title"]}
+              />
+            ))}
           </ul>
         </nav>
       </div>
