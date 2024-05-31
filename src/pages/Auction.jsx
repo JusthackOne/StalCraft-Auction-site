@@ -4,6 +4,7 @@ import Template from "./Template";
 import AuctionItem from "../components/AuctionItem";
 import { useAuctionSearch } from "../hooks/useAuctionSearch";
 import { useLoadAuctionItems } from "../hooks/useLoadAuctionItems";
+import { NavLink } from "react-router-dom";
 
 function Auction() {
   const [name, setName] = useState("");
@@ -52,7 +53,13 @@ function Auction() {
           {status === "loaded" && (
             <>
               {dataToShow.map((item) => (
-                <AuctionItem icon={item.icon} title={item.title} id={item.id} key={item.id} data={item.data} />
+                <AuctionItem
+                  icon={item.icon}
+                  title={item.title}
+                  id={item.id}
+                  key={item.id}
+                  data={item.data}
+                />
               ))}
             </>
           )}
