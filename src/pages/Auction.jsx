@@ -52,7 +52,7 @@ function Auction() {
           {status === "loaded" && (
             <>
               {dataToShow.map((item) => (
-                <AuctionItem icon={item.icon} title={item.title} id={item.id} key={item.id} />
+                <AuctionItem icon={item.icon} title={item.title} id={item.id} key={item.id} data={item.data} />
               ))}
             </>
           )}
