@@ -2,7 +2,6 @@
 * {
   padding: 0px;
   margin: 0px;
-  
 }
 
 *,
@@ -107,4 +106,13 @@ label {
 
 legend {
   display: block;
+}
+.no-style-scroll {
+  scrollbar-width: none; /* скрывает стандартные полосы прокрутки в Firefox */
+  -ms-overflow-style: none; /* скрывает стандартные полосы прокрутки в IE и Edge */
+}
+
+/* Добавьте следующие стили, если нужно поддерживать Chrome и Safari */
+.no-style-scroll::-webkit-scrollbar {
+  display: none; /* скрывает стандартные полосы прокрутки в Chrome и Safari */
 }
