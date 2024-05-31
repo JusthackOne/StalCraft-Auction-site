@@ -17,6 +17,10 @@ const router = createBrowserRouter([
     path: ROUTES.AUCTION.to,
     element: ROUTES.AUCTION.component,
   },
+  {
+    path: ROUTES.AUCTION_ITEM.to,
+    element: ROUTES.AUCTION_ITEM.component,
+  },
 ]);
 
 function App() {
