@@ -3,18 +3,19 @@ import React from "react";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import MainPage from "./pages/MainPage";
-import Auction from "./pages/Auction";
+
+
+import { ROUTES } from "./utils/routes";
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <MainPage />,
+    path: ROUTES.MAIN.to,
+    element: ROUTES.MAIN.component,
   },
   {
-    path: "/auction",
-    element: <Auction />,
+    path: ROUTES.AUCTION.to,
+    element: ROUTES.AUCTION.component,
   },
 ]);
 
