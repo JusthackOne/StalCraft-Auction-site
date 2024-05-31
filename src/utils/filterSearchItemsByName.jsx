@@ -28,6 +28,7 @@ export function filterSearchItemsByName(name, items) {
         title: item.name.lines.ru,
         icon: item.icon,
         id: id,
+        data: item.data,
       });
     }
   }
