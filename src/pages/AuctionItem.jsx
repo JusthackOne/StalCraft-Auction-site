@@ -31,7 +31,7 @@ function Item() {
       const url = `https://eapi.stalcraft.net/ru/auction/y1q9/lots`;
       const response = await fetch(url, {
         method: "GET",
-        mode: "no-cors",
+
         headers: {
           Authorization:
             "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MjYiLCJqdGkiOiJlMzE5Njc4YTY2NzJjM2U1OGQ3NzFmNjRmOGYyMmEyMzUxMTE4YzAwY2E2OWJkYTY0NDJhYjlkMjBiZmNhNzBiNzMwN2VhZDEyYzBjMDZiOSIsImlhdCI6MTcxNzE2MTE5OS43MTUyMzcsIm5iZiI6MTcxNzE2MTE5OS43MTUyMzksImV4cCI6MTc0ODY5NzE5OS4zNzYxNTUsInN1YiI6IiIsInNjb3BlcyI6W119.n7rDu9_2aR2gQ4cYYz-E-hUjEQPkV7HMunyXiFqAy6ScNqeme9IlzsFls9R8DpRHgK8g-BAZH_zsHt9d_GIp31rtukcokRCaEIGQpmSzCCUkl1opzVJOcrR2u0zqsvsXxwW39G6fm50N4c1dZZGpX1LojpLI5uR3pwgp3_jNempd2e6_IhL_CRa4qjjGunLr_f6PRiJiDIhwsRUKwYtZjk7GyGrkS1C444Otmvh9hl_MF3TISHEf-3xZyl8riUimEcd8pSayox_QYj7Q8u_edNtczCMuvfbYPwmKtqWP3tPJ5U-rZgBsOAuqOBoFc-E3ATT3craMrCo6aqYO0LqOUIhv2g5TOAQnDsrv117I9dT-AobnNC4D-Tq_33-eORL1Z29poOfnfkWcrTj2W3_-JcgQXEzKX0mzeVGKP2cmWv3XNErmjvBDSFA6J_9owYGBeabh1-0p-KadFXzcsl8qynldnSsg_465qn9J_13oh-nOVDtvtDV3Da13BGdbV7-xCJgORYaTtZ1axFeiYxDM-4tNXIaDhtEctWbtW8GJP3BaTX3OOov5B-dZzHt8d_ondGMgfXhR-AuK_C-OTRo1_ZYonknCs-2mVi9M2GNUYVb9r4PURjwKnjHQxGRmXzqXVzPsRY8ZZQdTyVFV6jrLcQ7nHeBZkNGAchPyMXKdcaM",
