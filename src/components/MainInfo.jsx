@@ -21,9 +21,9 @@ function MainInfo() {
           className="sm:w-2/3 w-96  mt-10  md:hidden block"
         />
         <h2 className="mt-6 xl:text-md md:text-sm text-md md:text-left text-center">
-          Самый пиздатый аукцион внутреигровых предметов для{" "}
+          Самый удобный и простой сайт аукцион{" "}
           <br className="md:block hidden" />
-          самых пиздатых криптоинвесторов
+          нашей любимой игры Stalcraft
         </h2>
         <div className="flex sm:flex-row flex-col gap-5 xl:text-md md:text-xs sm:text-sm sm:items-center items-stretch mt-8">
           <button className="xl:p-4 sm:p-3 p-2 font-bold  bg-red rounded-full hover:bg-white hover:text-red transition">
