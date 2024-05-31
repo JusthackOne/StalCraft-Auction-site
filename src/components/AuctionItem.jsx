@@ -7,6 +7,7 @@ import itemPhoto from "./../assets/images/itemPhoto.png";
 import { useTotalOnAuction } from "../hooks/useTotalOnAuction";
 import useAuctionItemBorder from "../hooks/useAuctionItemBorder";
 import { ITEM_RANK } from "../utils/constants";
+import { NavLink } from "react-router-dom";
 
 function AuctionItem({ title, icon, id, data }) {
   const [isLiked, setIsLiked] = useState(false);
@@ -48,7 +49,9 @@ function AuctionItem({ title, icon, id, data }) {
         className="w-1/2   self-center"
       />
 
-      <p>{title}</p>
+      <NavLink to={"/auction/" + id}>
+        <p>{title}</p>
+      </NavLink>
     </div>
   );
 }
